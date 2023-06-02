@@ -23,6 +23,7 @@ const Block = (props) => {
         }
     })
 
+    // checks the previous block
     const validateBlocks = block => {
         const result = boardData.indexOf(currentBlock) - boardData.indexOf(block) == 1
         return result
